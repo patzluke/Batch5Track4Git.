@@ -31,8 +31,9 @@ public class TestCheckStr {
 	
 	@Test
 	public void testConvertNull() {		
+		String nullString = null;
 		assertThrows(NullPointerException.class, ()-> {
-			assertNull(cs.convert(null), "does not support null String");
+			assertNull(cs.convert(nullString), "does not support null String");
 		});
 	}
 	
